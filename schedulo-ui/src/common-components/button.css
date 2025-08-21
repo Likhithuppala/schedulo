@@ -1,0 +1,44 @@
+.futuristic-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  /* Gradient background */
+  background: linear-gradient(90deg, #00f5ff, #00ffaa, #ff00ff, #ffae00);
+  background-size: 300% 300%;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: gradient-shift 6s infinite linear;
+}
+
+/* Hover effect */
+.futuristic-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 245, 255, 0.6);
+}
+
+/* Active (click) effect */
+.futuristic-btn:active {
+  transform: scale(0.98);
+}
+
+/* Gradient animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .futuristic-btn {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
