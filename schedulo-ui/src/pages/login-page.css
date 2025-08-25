@@ -1,0 +1,62 @@
+/* Full screen, no scroll */
+.login-page{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+  overflow: hidden; /* prevent scroll */
+}
+
+/* Theme backgrounds */
+body[data-theme="light"] .login-page{
+  background: #ffffff;
+  color: #000000;
+}
+
+body[data-theme="dark"] .login-page{
+  background: #000000;
+  color: #ffffff;
+}
+
+.top-bar {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Gradient glossy header */
+.login-title{
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  background: linear-gradient(90deg, #1677ff, #6dd5ed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}

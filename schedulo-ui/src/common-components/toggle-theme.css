@@ -1,0 +1,21 @@
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.theme-icon {
+  transition: color 0.3s ease;
+}
+
+.light-icon {
+  color: #ffffff; /* Sun icon in dark mode */
+}
+
+.dark-icon {
+  color: #000000; /* Moon icon in light mode */
+}
