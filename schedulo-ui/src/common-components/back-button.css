@@ -1,0 +1,21 @@
+.back-button {
+  position: absolute !important;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.2rem !important;
+  color: var(--back-button-color) !important;
+  background: var(--back-button-bg) !important;
+  border: none !important;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  color: var(--back-button-hover-color) !important;
+  background: var(--back-button-hover-bg) !important;
+  transform: scale(1.1);
+}
